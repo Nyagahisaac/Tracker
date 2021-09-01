@@ -32,14 +32,6 @@ export class UserService {
   getRepoData() {
 
 
-
-
-
-
-
-
-
-
     return this.http.get(`https://api.github.com/users/${this.username}/repos?${this.clientId}&client_secret=${this.clientSecret}`);
   }
 
