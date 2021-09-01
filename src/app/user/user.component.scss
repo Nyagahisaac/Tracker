@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+
+form {
+    margin-top: 90px;
+  }
+  .header{
+      text-transform: capitalize;
+      color: gray;
+      font-size: 50px;
+      font-weight: bold;
+      font-family: 'STIX Two Math', serif;
+  }
+  .content{
+      text-align: center;
+      margin-left: 100px;
+  }
+  .card-body{
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px 2px rgba(0,0,0,0.25);
+  }
+  
+  .no-border {
+    border-style: none;
+  }
+  
+  .space {
+    margin-right: 7px;
+  }
+  
+  .redirect {
+    color: #393c40;
+  }
+  
+  .redirect:hover {
+    color: rgb(248, 211, 0);
+  }
+  
+  .bottom-space {
+    margin-bottom: 10px;
+  }
+  
+  button>.badge {
+    cursor: crosshair;
+  }
+  
+  .date {
+    float: right;
+  }
+  
+  .btn-hov:hover {
+    background-color: #fff;
+  }
+  
+  .s-top{
+    top: 60px;
+  }
+  
+  .s-top-nav{
+    top: 55px;
+  }
+  
+  div>a{
+    color: #393c40;
+  }
+  
+  .profile-thumb{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+  }
+  .content {
+    text-align: center;
+    margin-top: 230px;
+    align-content: center;
+    align-items: center;
+  }
+  
+  @media screen and (min-width: 601px) {
+    .effect>h1 {
+      font-size: 73px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .effect>h1 {
+      font-size: 40px;
+    }
+  }
+  
+  .effect>h1 {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .content>h5 {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .blinking-cursor {
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes blink {
+  
+    from,
+    to {
+      color: transparent;
+    }
+  
+    50% {
+      color: black;
+    }
+  }
+  
+  @-moz-keyframes blink {
+  
+    from,
+    to {
+      color: transparent;
+    }
+  
+    50% {
+      color: black;
+    }
+  }
+  
+  @-webkit-keyframes blink {
+  
+    from,
+    to {
+      color: transparent;
+    }
+  
+    50% {
+      color: black;
+    }
+  }
+  
+  @-ms-keyframes blink {
+  
+    from,
+    to {
+      color: transparent;
+    }
+  
+    50% {
+      color: black;
+    }
+  }
+  
+  @-o-keyframes blink {
+  
+    from,
+    to {
+      color: transparent;
+    }
+  
+    50% {
+      color: black;
+    }
+  }
+  
+  .content>a button:hover {
+    background: rgb(248, 211, 0);
+    color: #393c40;
+  }
+  
+  .content>a button {
+    border-width: 5px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
+  
+//   .jumbotron {
+//     background: #fff;
+//   }
