@@ -1,1 +1,50 @@
-<p>repo works!</p>
+<div class="container">
+    <h1 class="text-center mt-3 mb-5" style="color:gray;font-family: 'Kanit', sans-serif;font-weight: bold;text-transform: capitalize;
+    ">~Search for repositories:~</h1>
+    <form #searchField="ngForm">
+        <div class="form-group" style="display: flex">
+            <input [(ngModel)]="repositories" #repo="ngModel" type="search"
+                placeholder="search github repositories *...." name="username" class="form-control  btn-outline-primary"
+                style=" box-shadow:2px 2px 15px 2px rgba(0,0,0,0.25) ; border-right-style: none; border-radius: 10px; border-color: #000 "
+                required>
+            <button (click)="searchRepo()" type="submit" class="btn btn-outline-dark btn-hov"
+                style="border-left-style: none; border-radius: 0"><i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+        </div>
+
+    </form>
+    
+    <div class="col-md-8">
+        <div class="card-body p-3">
+            <p class="card-title">{{ repoProfile.name }}
+            </p>
+            <p class="card-text"><span class="text-muted">fullname:</span> {{ repoProfile.fullname }}
+            </p>
+            <p *ngIf="repoProfile.description" class="card-text"><span class="text-muted">description:</span> {{
+                repoProfile.description }}
+            </p>
+
+            <p *ngIf="repoProfile.url" class="card-text"><i class="fas fa-link"></i><span>Url:</span>
+                {{ repoProfile.url }}</p>
+
+            <p *ngIf="repoProfile.language" class="card-text"><span>language:</span>
+
+                {{ repoProfile.language}}</p>
+            <!-- <p *ngIf="repoProfile.created_at" class="card-text">
+
+                {{ repoProfile.created_at }}</p> -->
+            <p *ngIf="repoProfile.created_at" class="card-text"><span >created_at:</span>
+                {{ repoProfile.created_at | date }}</p>
+
+            <p *ngIf="repoProfile.clone_url" class="card-text"><span>clone_url:</span>
+
+                {{ repoProfile.clone_url }}</p>
+
+        </div>
+    </div>
+
+    <!-- <div class="card-body badge-secondary bg-light">
+        <div><span>{{repoProfile.name}}</span></div>
+
+    </div> -->
+</div>

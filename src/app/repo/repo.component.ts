@@ -6,8 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./repo.component.scss']
 })
 export class RepoComponent implements OnInit {
-
+  repoProfile:any;
+   name!: string;
+   fullname!: string;
+   description!: string;
+   url!: string;
+   language!: string;
+   created_at!: string;
+   clone_url!: string;
+  repositories!: string;
+  
   constructor() { }
+
+  searchRepo(){}
 
   ngOnInit(): void {
   }

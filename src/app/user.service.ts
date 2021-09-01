@@ -20,12 +20,6 @@ export class UserService {
   getProfileData() {
 
 
-
-
-
-
-
-
     return this.http.get(`https://api.github.com/users/${this.username}?${this.clientId}&client_secret=${this.clientSecret}`);
   }
 

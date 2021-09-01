@@ -13,9 +13,9 @@
     </p>
     <form #searchField="ngForm">
         <div class="form-group" style="display: flex">
-            <input [(ngModel)]="username" #user="ngModel" type="search" placeholder="search github username"
+            <input [(ngModel)]="username" #user="ngModel" type="search" placeholder="search github username ....*"
                 name="username" class="form-control"
-                style=" box-shadow:2px 2px 15px 2px rgba(0,0,0,0.25) ; border-right-style: none; border-radius: 0; border-color: #000 "
+                style=" text-transform: capitalize; box-shadow:2px 2px 15px 2px rgba(0,0,0,0.25) ; border-right-style: none; border-radius: 0; border-color: #000 "
                 required>
             <button (click)="searchUser()" type="submit" class="btn btn-outline-dark btn-hov"
                 style="border-left-style: none; border-radius: 0"><i class="fa fa-search" aria-hidden="true"></i>
@@ -35,14 +35,14 @@
                 <div class="card no-border mb-3" style="max-width: 540px;">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="{{ userProfile.avatar_url }}" class="card-img img-fluid" alt="avatar" width="100"
+                            <img src="{{ userProfile.avatar_url }}" class="card-img img-fluid mr-3" style="box-shadow:2px 2px 15px 2px rgba(0,0,0,0.25);" alt="avatar" width="100"
                                 height="180">
                         </div>
                         <div class="col-md-8">
-                            <div class="card-body">
+                            <div class="card-body p-3">
                                 <h5 class="card-title">{{ userProfile.name }} <a class="redirect"
-                                        href="{{ userProfile.html_url }}" target="_blank"><i
-                                            class="fab fa-github"></i></a></h5>
+                                        href="{{ userProfile.html_url }}" target="_blank">
+                                        <i class="fa fa-github" aria-hidden="true"></i></a></h5>
                                 <p class="card-text"><span class="text-muted">Username:</span> {{ userProfile.login }}
                                 </p>
                                 <p *ngIf="userProfile.bio" class="card-text"><span class="text-muted">Bio:</span> {{
@@ -89,11 +89,11 @@
                         href="#repos" role="tab" aria-controls="nav-home" aria-selected="true">Repos <span
                             class="badge badge-secondary">{{
                             userProfile.public_repos }}</span></a>
-                    <a *ngIf="userProfile" class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
-                        href="#followers" role="tab" aria-controls="nav-profile" aria-selected="false">Followers <span
+                    <a *ngIf="userProfile" class="nav-item nav-link " id="nav-profile-tab" data-toggle="tab"
+                        href="#followers" role="tab" aria-controls="nav-profile" aria-selected="true">Followers <span
                             class="badge badge-secondary">{{ userProfile.followers }}</span></a>
-                    <a *ngIf="userProfile" class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
-                        href="#following" role="tab" aria-controls="nav-contact" aria-selected="false">Following <span
+                    <a *ngIf="userProfile" class="nav-item nav-link " id="nav-contact-tab" data-toggle="tab"
+                        href="#following" role="tab" aria-controls="nav-contact" aria-selected="true">Following <span
                             class="badge badge-secondary">{{ userProfile.following }}</span></a>
                 </div>
             </nav>
