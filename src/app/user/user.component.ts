@@ -20,6 +20,8 @@ export class UserComponent implements OnInit {
     this.service.updateFields(this.username);
     this.service.getProfileData()
       .subscribe(profile => {
+
+        
         // console.log(profile);
         this.userProfile = profile;
       }, error => {
