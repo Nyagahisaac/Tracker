@@ -5,6 +5,9 @@
 * Email: [@nyagahisaac](nyagahIsaac21@gmail.com)
 * Github: [Nyagahisaac](https://github.com/Nyagahisaac)
 
+## live link for GitHub
+* Live link : (nyagahisaac.github.io/tracker/ )
+
 ## Angular Server
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
 
@@ -14,7 +17,11 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 
 ## Technologies Used
-The language used to develop this application is the HTML,CSS,BOOTSTRAP and Angular.. 
+The language used to develop this application is the
+HTML
+CSS
+BOOTSTRAP
+Angular.. 
 
 ## BDD(Behaviour Driven Development)
 The user is required to input a username that is registered on ghithub.
@@ -83,7 +90,7 @@ You can provide feedback or raise any issues/ bugs through the following means:
 * murerwacollins@gmail.com
 
 ## Live Site link
-You can view the live application by following this [link](https://gitconnect-ip.firebaseapp.com/).
+You can view the live application by following this [link]( nyagahisaac.github.io/tracker/ ).
 
 ## Support and contact details
  kindly reach out our support team @dannyagah13@gmail.com for any technical problem or any idea we can implement to ensure you get the result you need. You can also through the about
