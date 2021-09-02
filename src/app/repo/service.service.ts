@@ -17,7 +17,7 @@ export class ServiceService {
 
   getRepoData () {
      
-    return this.http.get(`https:api.github.com/search/repositories?q=${this.repository}&client_secret=${this.clientSecret}`)
+    return this.http.get(`https://api.github.com/search/repositories?q=${this.repository}&client_secret=${this.clientSecret}`)
   }
   updateFields(repository: string) {
     this.repository = repository;
