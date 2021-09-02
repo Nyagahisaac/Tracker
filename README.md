@@ -15,9 +15,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Technologies Used
 The language used to develop this application is the HTML,CSS,BOOTSTRAP and Angular.. 
-## Support and contact details
- kindly reach out our support team @dannyagah13@gmail.com for any technical problem or any idea we can implement to ensure you get the result you need. You can also through the about
- kindly reach out our support team @dannyagah13@gmail.com for any technical problem or any idea we can implement to ensure you get the result you need. You can also reach out to us through the form in the about section.
+
 ## BDD(Behaviour Driven Development)
 The user is required to input a username that is registered on ghithub.
 the api will generate all the repositories associated with the particular username.
@@ -87,6 +85,9 @@ You can provide feedback or raise any issues/ bugs through the following means:
 ## Live Site link
 You can view the live application by following this [link](https://gitconnect-ip.firebaseapp.com/).
 
+## Support and contact details
+ kindly reach out our support team @dannyagah13@gmail.com for any technical problem or any idea we can implement to ensure you get the result you need. You can also through the about
+ kindly reach out our support team @dannyagah13@gmail.com for any technical problem or any idea we can implement to ensure you get the result you need. You can also reach out to us through the form in the about section.
 
 ## 📝 License
 
