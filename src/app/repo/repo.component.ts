@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceService } from './service.service';
 
 @Component({
   selector: 'app-repo',
@@ -16,9 +17,19 @@ export class RepoComponent implements OnInit {
    clone_url!: string;
   repositories!: string;
   
-  constructor() { }
+  constructor(private service : ServiceService) { }
 
-  searchRepo(){}
+  searchRepo(){
+    this.service.updateFields(this.repositories);
+    this.service.getRepoData().subscribe(
+      repo=>{
+        this.repoProfile = repo;
+        console.log(this.repoProfile);
+      },error=>{
+        console.log(error);
+      }
+    )
+  }
 
   ngOnInit(): void {
   }

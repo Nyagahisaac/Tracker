@@ -7,7 +7,7 @@ import { environment } from 'src/environments/environment';
 })
 export class ServiceService {
    
-  private username!: string;
+  private repository!: string;
   private token = environment.apikey;
   private clientId = environment.clientId;
   private clientSecret = environment.clientSecret;
@@ -15,8 +15,11 @@ export class ServiceService {
 
   constructor(private http:HttpClient) { }
 
-  getProfileData () {
+  getRepoData () {
      
-    return this.http.get(`https:api.github.com/search/repositories/${this.username}?${this.clientId}&client_secret=${this.clientSecret}`)
+    return this.http.get(`https:api.github.com/search/repositories?q=${this.repository}&client_secret=${this.clientSecret}`)
+  }
+  updateFields(repository: string) {
+    this.repository = repository;
   }
 }

@@ -102,8 +102,8 @@
 
                 <div class="tab-pane fade show active" id="repos" role="tabpanel" aria-labelledby="nav-home-tab">
                     <div *ngFor="let repo of repos; index as i">
-                        <div appCardHover class="card bottom-space">
-                            <div class="card-body" appHoover>
+                        <div appHoover class="card bottom-space">
+                            <div class="card-body" >
                                 <h3>{{ repo.name }} <i *ngIf="repo.fork" class="fas fa-code-branch fa-xs"></i> <span
                                         style="font-size:12px; float:right; color:blue; background-color: #393c40"
                                         class="badge badge-secondary">{{ repo.language }}</span></h3>

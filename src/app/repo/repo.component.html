@@ -15,10 +15,23 @@
     </form>
 
     <div class="col-md-8">
-        <div class="card-body p-3">
-            <p class="card-title">{{ repoProfile.name }}
-            </p>
-            <p class="card-text"><span class="text-muted">fullname:</span> {{ repoProfile.fullname }}
+        <div class="card-body p-3" *ngIf="repoProfile">
+            <div class="card m-2" appHoover *ngFor='let item of repoProfile.items'>
+                <div class="card-header">{{item.description}}</div>
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            Language : {{item.language}}
+                        </li>
+                        <li>Is Private : {{item.private}}</li>
+                        <li>Clone Url : <a href="{{item.clone_url}}">{{item.clone_url}}</a></li>
+                        <li>Created At : {{item.created_at | date}}</li>
+                        <li>Owner : {{item.owner.login}}</li>
+                    </ul>
+                </div>
+            </div>
+           
+            <!-- <p *ngIf="repoProfile.url" class="card-text"><span class="text-muted">fullname:</span> {{ repoProfile.fullname }}
             </p>
             <p *ngIf="repoProfile.description" class="card-text"><span class="text-muted">description:</span> {{
                 repoProfile.description }}
@@ -30,15 +43,15 @@
             <p *ngIf="repoProfile.language" class="card-text"><span>language:</span>
 
                 {{ repoProfile.language}}</p>
-            <!-- <p *ngIf="repoProfile.created_at" class="card-text">
+            <p *ngIf="repoProfile.created_at" class="card-text">
 
-                {{ repoProfile.created_at }}</p> -->
+                {{ repoProfile.created_at }}</p>
             <p *ngIf="repoProfile.created_at" class="card-text"><span>created_at:</span>
                 {{ repoProfile.created_at | date }}</p>
 
             <p *ngIf="repoProfile.clone_url" class="card-text"><span>clone_url:</span>
 
-                {{ repoProfile.clone_url }}</p>
+                {{ repoProfile.clone_url }}</p> -->
 
         </div>
     </div>
